@@ -8,6 +8,8 @@
         .saw {color:gray;}
         #active {color:rgb(0, 85, 255); text-decoration: underline;}
         h4 {border:1px solid rgb(130, 130, 130); display:inline; padding: 2px;}
+        #container {width: 50% auto}
+        .img {cursor: pointer;}
     </style>
 </head>
 
@@ -24,7 +26,18 @@
         <h3>so amazing!</h3>
         <h5>I like this</h5>
         <h6>h tag</h6></p>
-    <p style="margin-top:60px;"><h4><span style="font-size:20px;">To do list</span></h4></p>
+
+        <div id="container">
+        <img class="img" src="typo_web_morning_glory_3.png" width="60%" alt="">
+        </div>
+        
+        <script>
+            const imgChange = document.querySelector(".img")
+            imgChange.addEventListener("mouseover", ()=>{imgChange.src="typo_web_morning_glory_5.gif";});
+            imgChange.addEventListener("mouseout", ()=>{imgChange.src="typo_web_morning_glory_3.png";});
+        </script>
+
+    <p style="margin-top:20px;"><h4><span style="font-size:20px;">To do list</span></h4></p>
         <ul><li>Do homework</li>
         <br><li>Clean the room</li>
         <br><li>Buy sketchbook</li></ul>
